@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Protocols.OpenIdConnect;
 using System.Security.Claims;
 
-var builder = WebApplication.CreateBuilder(args);
+var builder = WebApplication.CreateBuilder(args); //hej hej
 
 builder.Services.AddAuthentication(options =>
 {
@@ -118,7 +118,7 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapRazorPages();
-app.MapControllers();
+app.MapControllers(); //hej
 
 using (var scope = app.Services.CreateScope())
 {
